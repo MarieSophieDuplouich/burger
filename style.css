@@ -7,29 +7,54 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid black;
 }
 
 body {
     font-family: 'Super Adorable';
     color: #ffffff;
-      display: flex;
-    flex-direction: column;
-    
+    font-size: 2.5em;
+    text-align: center;
 
+
+}
+
+h3 {
+    font-size: 3em;
 }
 
 .hero-section {
-    background-color: #b92823;
-  
+    /* background-color: #b92823; */
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #b92823);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-   
 
+
+}
+
+.burger {
+    width: 500px;
+    height: auto;
 }
 
 .map-section {
-    background-color: #d86525;
+    /* background-color: #d86525; */
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #d86525);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .about-section {
-    background-color: #f4e4b8;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #f4e4b8);
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
