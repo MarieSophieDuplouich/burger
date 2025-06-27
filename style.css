@@ -43,8 +43,9 @@ h3 {
     /* background-color: #b92823; */
     background-image: linear-gradient(250deg, rgba(64, 64, 64, 0.5), #b92823);
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+
 }
 
 .burger {
@@ -52,8 +53,9 @@ h3 {
     height: auto;
 }
 
-.oignion {}
-
+espace-oignion-gauche{
+  
+}
 .oignion-sous-le-burger {
     /* rotate: 310deg; */
     transform: scaleX(-1);
@@ -117,7 +119,11 @@ ul {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+.burger{
+    max-width: 100%;
+  height: auto;
 
+}
    
 }
 
