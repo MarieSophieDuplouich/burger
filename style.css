@@ -30,6 +30,11 @@ body {
     background-color: #404040;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 h3 {
     font-size: 3em;
 }
@@ -62,10 +67,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-.responsive-iframe {
 
-
-}
 
 ul {
     list-style-type: none;
@@ -76,38 +78,48 @@ ul {
 
 }
 
-ul li img {
+/* ul li img {
 
     margin: 50px;
-}
+} */
 
 .about-section {
     color: #404040;
     background-color: #f4e4b8;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-      
-    
 
 }
 
 .about-section h2 {
     font-size: 3em;
-    margin: 50px;
+
 
 }
+
 
 /* medias queries */
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+       .responsive-iframe{
+        width:300px;
+        height:225px;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+
+   
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
