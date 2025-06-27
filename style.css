@@ -43,8 +43,8 @@ h3 {
     /* background-color: #b92823; */
     background-image: linear-gradient(250deg, rgba(64, 64, 64, 0.5), #b92823);
     display: flex;
-    justify-content: flex-start;
     flex-direction: row;
+     
 
 }
 
@@ -91,6 +91,7 @@ ul {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    align-items: center;
 
 }
 
