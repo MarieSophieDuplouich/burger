@@ -59,6 +59,7 @@ h3 {
     background-color: #d86525;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .responsive-iframe {
@@ -71,7 +72,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
+}
+
+ul li img {
+
+    margin: 50px;
 }
 
 .about-section {
@@ -79,11 +86,14 @@ ul {
     background-color: #f4e4b8;
     display: flex;
     flex-direction: row;
+      
+    
 
 }
 
 .about-section h2 {
     font-size: 3em;
+    margin: 50px;
 
 }
 
