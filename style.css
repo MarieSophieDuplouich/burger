@@ -12,8 +12,8 @@ An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha 
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
-    outline: 1px solid red;
+    /* border: 1px solid black;
+    outline: 1px solid red; */
 }
 
 h1 {
@@ -30,6 +30,11 @@ body {
     background-color: #404040;
 }
 
+.oignion {
+    position: absolute;
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -42,23 +47,37 @@ h3 {
 .hero-section {
     /* background-color: #b92823; */
     background-image: linear-gradient(250deg, rgba(64, 64, 64, 0.5), #b92823);
-    display: flex;
-    flex-direction: row;
-     
+
+
 
 }
 
 .burger {
     width: 500px;
     height: auto;
+
+
 }
 
-espace-oignion-gauche{
-  
+.X {
+    /* background-image: url(./assets/burger.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./assets/oignion.png);
+    background-position: right;
+    transform: scaleX(-1);
+    background-size: 30%; */
+
+
+
 }
+
 .oignion-sous-le-burger {
     /* rotate: 310deg; */
     transform: scaleX(-1);
+
+
 }
 
 .map-section {
@@ -76,14 +95,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 5%;
 
 }
 
-/* ul li img {
-
-    margin: 50px;
-} */
+ul li {}
 
 .about-section {
     color: #404040;
@@ -92,6 +110,7 @@ ul {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    gap: 5%;
 
 }
 
@@ -107,25 +126,23 @@ ul {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-       .responsive-iframe{
-        width:300px;
-        height:225px;
+    .responsive-iframe {
+        width: 300px;
+        height: 225px;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-.burger{
-    max-width: 100%;
-  height: auto;
+    .burger {
+        max-width: 100%;
+        height: auto;
 
-}
-   
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
