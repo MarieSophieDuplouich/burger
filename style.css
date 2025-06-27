@@ -13,6 +13,11 @@ An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha 
     margin: 0;
     padding: 0;
     border: 1px solid black;
+    outline: 1px solid red;
+}
+
+h1 {
+    font-size: 3em;
 }
 
 body {
@@ -22,7 +27,7 @@ body {
     color: #ffffff;
     font-size: 2.5em;
     text-align: center;
-    background-color:#404040;
+    background-color: #404040;
 }
 
 h3 {
@@ -31,7 +36,7 @@ h3 {
 
 .hero-section {
     /* background-color: #b92823; */
-    background-image: linear-gradient(250deg, rgba(64,64,64,0.5), #b92823);
+    background-image: linear-gradient(250deg, rgba(64, 64, 64, 0.5), #b92823);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -42,56 +47,74 @@ h3 {
     height: auto;
 }
 
-.oignion-sous-le-burger{
-/* rotate: 310deg; */
-transform : scaleX(-1);
+.oignion {}
+
+.oignion-sous-le-burger {
+    /* rotate: 310deg; */
+    transform: scaleX(-1);
 }
 
 .map-section {
     /* background-color: #d86525; */
-    background-color:  #d86525;
+    background-color: #d86525;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.responsive-iframe {
+
+
 }
 
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 .about-section {
-    color:#404040;
-    background-color:  #f4e4b8;
+    color: #404040;
+    background-color: #f4e4b8;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row;
+
 }
 
+.about-section h2 {
+    font-size: 3em;
+
+}
 
 /* medias queries */
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
- 
-}
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  
-} 
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  
-} 
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {}
 
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
 }
