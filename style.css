@@ -17,6 +17,18 @@ An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha 
     outline: 1px solid red;
 }
 
+
+body {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    background-color: #404040;
+
+}
+
 h1 {
     font-size: 3em;
     margin: 20px;
@@ -31,15 +43,7 @@ h2 {
     padding: 0.5em;
 }
 
-body {
-    font-family: "Irish Grover", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffffff;
-    font-size: 2.5em;
-    text-align: center;
-    background-color: #404040;
-}
+
 
 .oignion {
     position: absolute;
@@ -113,7 +117,7 @@ ul {
 
 }
 
-ul li {}
+
 
 .about-section {
 
@@ -173,18 +177,26 @@ p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {}
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     body {
         display: flex;
         flex-direction: column;
+          font-size: 1em;
     }
 
-    .about-section {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-images{
+        display: flex;
+        flex-direction: column;
+    }
+      .about-section {
         display: flex;
         flex-direction: column;
     }
@@ -193,6 +205,18 @@ p {
         display: flex;
         flex-direction: column;
     }
+
+    h1,h2,h3{
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  
 }
 
 /* 
