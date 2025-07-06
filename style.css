@@ -197,8 +197,30 @@ p {
 }
 
 @media only screen and (max-width: 395px) {
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
 
-    .oignion{
+    .hero-text {
+        padding-left: 0;
+        /* supprime left-padding */
+    }
+
+    .hero-text p {
+        font-size: 1.2em;
+        text-align: center;
+
+    }
+
+    .hero-images {
+        align-items: center;
+    }
+
+    .oignion {
         display: none;
     }
 }
@@ -265,6 +287,12 @@ p {
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {}
+
+
+
+
+
+
 
 /* 
 flex-direction : row-reverse;
